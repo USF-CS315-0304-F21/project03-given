@@ -3,9 +3,9 @@ void merge_c(int a[], int aux[], int start, int end) {
     int mid = (start + end) / 2;  // midpoint
     int pointer_left = start;  // points to the beginning of the left sub-array
     int pointer_right = mid + 1; // points to the beginning of the right sub-array
-    int i;  // k is the loop counter
+    int i;  // i is the loop index
 
-    // we loop from i to j to fill each element of the final merged array
+    // loop from start to end to fill each element of the final merged array
     for (i = start; i <= end; i++) {
         if (pointer_left == mid + 1) {
             //  left pointer has reached the limit
